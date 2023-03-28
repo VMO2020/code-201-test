@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="title" content="code-201" />
+		<meta name="description" content="code-201" />
+		<title>Class 1 Lab</title>
+		<style>
+			.container {
+				width: 95%;
+				margin: 0 auto;
+			}
+			h1 {
+				color: white;
+				background-color: blue;
+				text-align: center;
+				padding: 0.5rem;
+			}
+			p {
+				border: 1px solid black;
+				box-shadow: 3px 3px 5px black;
+			}
+			footer p{
+				color: white;
+				background-color: blue;
+				margin-top: 2rem;
+				box-shadow: none;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="header-container container">
+				<h1>Class 1 Lab</h1>
+			</div>
+		</header>
+		<main>
+			<div class="main-container container">
+				
+				<p style="color: red; background-color: #ade8f1; padding: 1rem 0.5rem;">What is your first name? <span id="name"></span></p>
+				<p style="color: green; background-color: #ade8f1; padding: 1rem 0.5rem;">What is your surname? <span id="surname"></span></p>
+				<p style="color: blue; background-color: #ade8f1; padding: 1rem 0.5rem;">Where are you from? <span id="country"></span></p>
+				<p style="color: brown; background-color: #ade8f1; padding: 1rem 0.5rem;">Are you a fan of Liverpool FC? <span id="fan"></span></p>
+				<script>
+					let name = prompt('What is your name?');
+					document.getElementById('name').textContent = name;
+					document.getElementById('name').style.color = 'black';
+					document.getElementById('name').style.fontWeight = 'bold';;
+
+
+					let surname = prompt('What is your surname?');
+					document.getElementById('surname').textContent = surname;
+					document.getElementById('surname').style.color = 'black';
+					document.getElementById('surname').style.fontWeight = 'bold';;
+
+				
+					let country = prompt('Where are you from?');
+					document.getElementById('country').textContent = country;
+					document.getElementById('country').style.color = 'black';
+					document.getElementById('country').style.fontWeight = 'bold';
+
+			
+					let fan = prompt('Are you a fan of Liverpool FC?');
+					document.getElementById('fan').textContent = fan;
+					document.getElementById('fan').style.color = 'black';
+					document.getElementById('fan').style.fontWeight = 'bold';
+
+
+					alert('Welcome, ' + name + ' ' + surname + ' from ' + country) ;
+					alert('Liverpool FC fan?  ' + fan);
+					console.log('Welcome, ' + name + ' ' + surname + ' from ' + country) ;
+					console.log('Liverpool FC fan?  ' + fan);
+				</script>
+				
+				
+		</main>
+		<footer>
+			<div class="footer-container container">
+				<p style="text-align: center; padding: 0.7rem;">&#169; 2023 VMOG</p>
+			</div>
+		</footer>
+	</body>
+</html>
